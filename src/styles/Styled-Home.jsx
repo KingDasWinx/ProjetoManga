@@ -4,13 +4,13 @@ export const Main = styled.main`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
 
     .swiper{
         margin-top: 72px;
         width: 85%;
-        height: 91%;
+        height: 500px;
     }
 
     .swiper-slide{
@@ -30,7 +30,7 @@ export const Main = styled.main`
         background-size: cover;
         background-repeat: no-repeat;
         
-        z-index: 10;
+        z-index: -10;
 
         filter: brightness(59%) blur(8px);
         position: absolute;
@@ -39,10 +39,10 @@ export const Main = styled.main`
         position: absolute;
         left: -19px;
         right: -8px;
-        top: 50%;
+        top: 10px;
 
-        width: 1192px;
-        height: 1875px;
+        width: 100%;
+        height: 100%;
     }
 
     .swiper-pagination-bullet{
@@ -64,10 +64,8 @@ export const Main = styled.main`
         flex-direction: column;
 
         max-width: 59%;
-        height: 100%;
-        padding: 50px 0 50px 50px;
-
-        position: absolute;
+        gap: 30px;
+        padding: 50px;
 
         z-index: 10;
     }
@@ -155,6 +153,7 @@ export const Main = styled.main`
     }
 
     .capa{
+        display: flex;
         width: 394.203px;
         height: 575px;
         transform: rotate(7deg);
